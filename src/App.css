@@ -3537,3 +3537,83 @@ body {
     text-align: center;
   }
 }
+
+/* Wedding festivities custom icons */
+
+.event-icon-image {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  display: block;
+}
+
+.event-special .event-icon-image {
+  width: 48px;
+  height: 48px;
+}
+
+@media (max-width: 700px) {
+  .event-icon-image {
+    width: 42px;
+    height: 42px;
+  }
+
+  .event-special .event-icon-image {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* =========================================================
+   CUSTOM EVENT ICONS — REMOVE OLD CIRCLE FRAME
+   ========================================================= */
+
+.event-symbol:has(.event-icon-image) {
+  width: 82px;
+  height: 82px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.event-icon-image {
+  width: 82px;
+  height: 82px;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+.event-special .event-symbol:has(.event-icon-image) {
+  width: 90px;
+  height: 90px;
+  background: transparent;
+  border: none;
+}
+
+.event-special .event-icon-image {
+  width: 90px;
+  height: 90px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .event-symbol:has(.event-icon-image) {
+    width: 70px;
+    height: 70px;
+  }
+
+  .event-icon-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .event-special .event-symbol:has(.event-icon-image),
+  .event-special .event-icon-image {
+    width: 76px;
+    height: 76px;
+  }
+}

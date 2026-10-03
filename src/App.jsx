@@ -5,7 +5,7 @@ const weddingDate = new Date("2026-12-12T22:00:00+05:30");
 
 const events = [
   {
-    icon: "🌼",
+    icon: "/images/haldi_icon.png",
     title: "Haldi",
     date: "11 December 2026",
     time: "11:00 PM onwards",
@@ -13,7 +13,7 @@ const events = [
       "A joyful celebration filled with colour, laughter, blessings and togetherness.",
   },
   {
-    icon: "🌿",
+   icon: "/images/mehendi_icon.png",
     title: "Mehendi",
     date: "11 December 2026",
     time: "11:00 PM onwards",
@@ -21,7 +21,7 @@ const events = [
       "An intimate celebration of beautiful mehendi, music and cherished memories.",
   },
   {
-    icon: "♪",
+    icon: "/images/sangeet_icon.png",
     title: "Sangeet",
     date: "11 December 2026",
     time: "Evening",
@@ -29,7 +29,7 @@ const events = [
       "An evening of music, dance, laughter and unforgettable moments.",
   },
   {
-    icon: "ॐ",
+    icon: "/images/wedding_icon.png",
     title: "Wedding",
     date: "12 December 2026",
     time: "10:00 PM",
@@ -39,7 +39,7 @@ const events = [
     special: true,
   },
   {
-    icon: "✦",
+    icon: "/images/rings_reception_icon.png",
     title: "Reception",
     date: "18 December 2026",
     time: "Celebration Evening",
@@ -275,9 +275,8 @@ function App() {
   const whatsappUrl =
     "https://wa.me/917608921654?text=Hello%20Prayag%2C%20I%27m%20excited%20to%20celebrate%20Pragyan%20%26%20Kartik%27s%20wedding!";
 
-  const calendarUrl =
-    "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pragyan+%26+Kartik+Wedding&dates=20261212T163000Z&details=Wedding+of+Pragyan+and+Kartik&location=XYZ%2C+Ganganagar%2C+Rajasthan";
-
+  const receptionCalendarUrl =
+  "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pragyan+%26+Kartik+Reception&dates=20261218%2F20261219&details=Reception+of+Pragyan+%26+Kartik&location=River+Inn+Resort%2C+Sambalpur%2C+Odisha";
   return (
     <div className="wedding-page">
       <FloatingPetals />
@@ -596,8 +595,12 @@ function App() {
                     </div>
 
                     <div className="event-symbol">
-                      {event.icon}
-                    </div>
+  <img
+    src={event.icon}
+    alt={event.title}
+    className="event-icon-image"
+  />
+</div>
 
                     <div className="event-content">
 
@@ -712,14 +715,7 @@ function App() {
                   ♢ View Location
                 </a>
 
-                <a
-                  href={calendarUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="outline-button"
-                >
-                  + Add to Calendar
-                </a>
+                
 
               </div>
             </div>
@@ -759,14 +755,25 @@ function App() {
               Sambalpur, Odisha
             </p>
 
-            <a
-              href={receptionMap}
-              target="_blank"
-              rel="noreferrer"
-              className="outline-button"
-            >
-              ♢ View Location
-            </a>
+            <div className="button-row">
+  <a
+    href={receptionMap}
+    target="_blank"
+    rel="noreferrer"
+    className="outline-button"
+  >
+    ♢ View Location
+  </a>
+
+  <a
+    href={receptionCalendarUrl}
+    target="_blank"
+    rel="noreferrer"
+    className="gold-button"
+  >
+    + Add to Calendar
+  </a>
+</div>
 
           </div>
         </section>
@@ -775,41 +782,7 @@ function App() {
             RSVP
         ========================================= */}
 
-        <section className="rsvp-section">
-          <div className="rsvp-card reveal">
-
-            <div className="rsvp-inner-border" />
-
-            <p className="eyebrow">
-              WE WOULD LOVE TO HAVE YOU
-            </p>
-
-            <h2>
-              Will You Join Us?
-            </h2>
-
-            <Ornament />
-
-            <p>
-              Your presence, love and blessings mean
-              the world to us.
-            </p>
-
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="rsvp-button"
-            >
-              ☏ &nbsp; RSVP on WhatsApp
-            </a>
-
-            <small>
-              Prayag · 7608921654
-            </small>
-
-          </div>
-        </section>
+        
 
         {/* =========================================
             FAMILY
