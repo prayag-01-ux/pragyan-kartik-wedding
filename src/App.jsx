@@ -267,7 +267,7 @@ function App() {
   }, [opened]);
 
   const weddingMap =
-  "https://maps.app.goo.gl/doQBZvs5ubx18Prn9?g_st=ac";
+  "https://www.google.com/maps/search/?api=1&query=Singla+Resort";
   const receptionMap =
     "https://www.google.com/maps/search/?api=1&query=River+Inn+Resort+Sambalpur+Odisha";
 
@@ -708,7 +708,7 @@ function App() {
                 <a
                   href={weddingMap}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="gold-button"
                 >
                   ♢ View Location
