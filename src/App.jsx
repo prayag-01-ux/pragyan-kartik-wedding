@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const weddingDate = new Date("2026-12-12T22:00:00+05:30");
+const weddingDate = new Date("2026-12-12T19:00:00+05:30");
 
 const events = [
   {
@@ -32,8 +32,8 @@ const events = [
     icon: "/images/wedding_icon.png",
     title: "Wedding",
     date: "12 December 2026",
-    time: "10:00 PM",
-    venue: "XYZ · Ganganagar, Rajasthan",
+    time: "7:00 PM",
+    venue: "Singla Resort · Ganganagar, Rajasthan",
     description:
       "The sacred beginning of a beautiful new chapter in the lives of Pragyan and Kartik.",
     special: true,
@@ -41,8 +41,8 @@ const events = [
   {
     icon: "/images/rings_reception_icon.png",
     title: "Reception",
-    date: "18 December 2026",
-    time: "Celebration Evening",
+    date: "19 December 2026",
+    time: "7.30 PM onwards",
     venue: "River Inn Resort · Sambalpur, Odisha",
     description:
       "An evening to celebrate love, family and the beautiful journey ahead.",
@@ -267,8 +267,7 @@ function App() {
   }, [opened]);
 
   const weddingMap =
-    "https://www.google.com/maps/search/?api=1&query=XYZ+Ganganagar+Rajasthan";
-
+  "https://maps.app.goo.gl/doQBZvs5ubx18Prn9?g_st=ac";
   const receptionMap =
     "https://www.google.com/maps/search/?api=1&query=River+Inn+Resort+Sambalpur+Odisha";
 
@@ -276,7 +275,7 @@ function App() {
     "https://wa.me/917608921654?text=Hello%20Prayag%2C%20I%27m%20excited%20to%20celebrate%20Pragyan%20%26%20Kartik%27s%20wedding!";
 
   const receptionCalendarUrl =
-  "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pragyan+%26+Kartik+Reception&dates=20261218%2F20261219&details=Reception+of+Pragyan+%26+Kartik&location=River+Inn+Resort%2C+Sambalpur%2C+Odisha";
+  "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pragyan+%26+Kartik+Reception&dates=20261219%2F20261220&details=Reception+of+Pragyan+%26+Kartik&location=River+Inn+Resort%2C+Sambalpur%2C+Odisha";
   return (
     <div className="wedding-page">
       <FloatingPetals />
@@ -449,12 +448,12 @@ function App() {
 
               <div>
                 <strong>2026</strong>
-                <span>10:00 PM</span>
+                <span>7:00 PM</span>
               </div>
             </div>
 
             <p className="hero-location">
-              ✦ &nbsp; XYZ · Ganganagar, Rajasthan &nbsp; ✦
+              ✦ &nbsp; Singla Resort · Ganganagar, Rajasthan &nbsp; ✦
             </p>
 
             <Countdown />
@@ -498,7 +497,7 @@ function App() {
                   Daughter of
                   <br />
                   <strong>
-                    Prasant & Leena
+                    Mrs Leena Nanda & Mr Prasant Dash
                   </strong>
                 </p>
               </div>
@@ -525,7 +524,7 @@ function App() {
                   Son of
                   <br />
                   <strong>
-                    Sharma ji
+                    Mrs Kavita Sharma & Mr Shyam Sunder Sharma
                   </strong>
                 </p>
               </div>
@@ -678,7 +677,7 @@ function App() {
                   </span>
 
                   <strong>
-                    10:00 PM
+                    7:00 PM
                   </strong>
                 </div>
 
@@ -688,7 +687,7 @@ function App() {
                   </span>
 
                   <strong>
-                    XYZ
+                    Singla Resort 
                   </strong>
                 </div>
 
@@ -744,8 +743,11 @@ function App() {
             <Ornament />
 
             <p className="reception-date">
-              18 DECEMBER 2026
+              SATURDAY . 19 DECEMBER 2026
             </p>
+            <p className="reception-time">
+  7:30 PM onwards
+</p>
 
             <h3>
               River Inn Resort
@@ -807,7 +809,7 @@ function App() {
                 </p>
 
                 <h3>
-                  Prasant & Leena
+                  Mrs Leena Nanda & Mr Prasant Dash
                 </h3>
 
                 <small>
@@ -827,7 +829,7 @@ function App() {
                 </p>
 
                 <h3>
-                  Sharma ji
+                  Mrs Kavita Sharma & Mr Shyam Sunder Sharma 
                 </h3>
 
                 <small>
