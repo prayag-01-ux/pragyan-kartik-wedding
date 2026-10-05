@@ -266,8 +266,9 @@ function App() {
     return () => observer.disconnect();
   }, [opened]);
 
-  const weddingMap =
-  "https://www.google.com/maps/search/?api=1&query=Singla+Resort";
+   
+const weddingMap =
+  "https://maps.app.goo.gl/PAzWMaZygTnUS5SUA?g_st=ac";
   const receptionMap =
     "https://www.google.com/maps/search/?api=1&query=River+Inn+Resort+Sambalpur+Odisha";
 
