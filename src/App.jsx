@@ -220,9 +220,9 @@ function PhotoPlaceholder({ label }) {
 
 function App() {
   const [opened, setOpened] = useState(false);
-  const [curtainOpened, setCurtainOpened] =
-    useState(false);
-  const [musicOn, setMusicOn] = useState(false);
+const [curtainOpened, setCurtainOpened] = useState(false);
+const [musicOn, setMusicOn] = useState(false);
+const [hindi, setHindi] = useState(false);
 
   /* =========================================
      AUTOMATIC CURTAIN OPEN
@@ -279,6 +279,7 @@ const weddingMap =
   "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pragyan+%26+Kartik+Reception&dates=20261219%2F20261220&details=Reception+of+Pragyan+%26+Kartik&location=River+Inn+Resort%2C+Sambalpur%2C+Odisha";
   return (
     <div className="wedding-page">
+    
       <FloatingPetals />
       <GoldParticles />
 
@@ -353,7 +354,7 @@ const weddingMap =
           </p>
 
           <button
-            className={`reveal-button ${
+            className={`reveal-button pulse-invite ${
               curtainOpened
                 ? "button-visible"
                 : ""

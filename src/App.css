@@ -3617,3 +3617,58 @@ body {
     height: 76px;
   }
 }
+
+.pulse-invite {
+  animation: invitationPulse 2s ease-in-out infinite;
+}
+
+@keyframes invitationPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(198, 154, 58, 0);
+  }
+
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 0 24px rgba(198, 154, 58, 0.45);
+  }
+}
+
+.language-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  padding: 4px;
+  border: 1px solid rgba(198, 154, 58, 0.55);
+  border-radius: 999px;
+  background: rgba(248, 238, 219, 0.92);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.language-switch button {
+  border: none;
+  background: transparent;
+  color: #7a2638;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.language-switch button.active {
+  background: #7a2638;
+  color: #f8eedb;
+}
+
+@media (max-width: 700px) {
+  .language-switch {
+    top: 12px;
+    right: 12px;
+  }
+}
