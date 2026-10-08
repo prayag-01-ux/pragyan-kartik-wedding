@@ -714,7 +714,7 @@ const weddingMap =
                   </span>
 
                   <strong>
-                    Ganganagar, Rajasthan
+                    Sri Ganganagar, Rajasthan
                   </strong>
                 </div>
 
