@@ -5,41 +5,44 @@ const weddingDate = new Date("2026-12-12T19:00:00+05:30");
 
 const events = [
   {
-    icon: "/images/haldi_icon.png",
+    icon: "/images/haldi.png",
     title: "Haldi",
-    date: "11 December 2026",
-    time: "11:00 PM onwards",
+    date: "12 December 2026",
+    time: "10:00 AM onwards",
+    venue: "Hotel Sea Rock . Sri Ganganagar,Rajasthan",
     description:
       "A joyful celebration filled with colour, laughter, blessings and togetherness.",
   },
   {
-   icon: "/images/mehendi_icon.png",
+   icon: "/images/mehendi.png",
     title: "Mehendi",
     date: "11 December 2026",
-    time: "11:00 PM onwards",
+    time: "12:00 PM onwards",
+    venue: "Hotel Sea Rock . Sri Ganganagar,Rajasthan",
     description:
       "An intimate celebration of beautiful mehendi, music and cherished memories.",
   },
   {
-    icon: "/images/sangeet_icon.png",
+    icon: "/images/sangeet.png",
     title: "Sangeet",
     date: "11 December 2026",
-    time: "Evening",
+    time: "6:00 PM onwards",
+    venue: "Hotel Sea Rock . Sri Ganganagar,Rajasthan",
     description:
       "An evening of music, dance, laughter and unforgettable moments.",
   },
   {
-    icon: "/images/wedding_icon.png",
+    icon: "/images/wedding.png",
     title: "Wedding",
     date: "12 December 2026",
     time: "7:00 PM",
-    venue: "Singla Resort · Ganganagar, Rajasthan",
+    venue: "Singla Resort · Sri Ganganagar, Rajasthan",
     description:
       "The sacred beginning of a beautiful new chapter in the lives of Pragyan and Kartik.",
     special: true,
   },
   {
-    icon: "/images/rings_reception_icon.png",
+    icon: "/images/wedding-rings.png",
     title: "Reception",
     date: "19 December 2026",
     time: "7.30 PM onwards",
@@ -192,10 +195,10 @@ function SectionHeading({
 }
 
 function PhotoPlaceholder({ label }) {
-  const images = {
-    Bride: "/images/IMG_2249 copy.png",
-    Groom: "/images/IMG_2250.png",
-  };
+const images = {
+  Bride: "/images/bride.png",
+  Groom: "/images/groom.png",
+};
 
   const image = images[label];
 
@@ -350,7 +353,7 @@ const weddingMap =
           </div>
 
           <p className="opening-location">
-            Ganganagar · Rajasthan
+            Sri Ganganagar · Rajasthan
           </p>
 
           <button
@@ -455,7 +458,7 @@ const weddingMap =
             </div>
 
             <p className="hero-location">
-              ✦ &nbsp; Singla Resort · Ganganagar, Rajasthan &nbsp; ✦
+              ✦ &nbsp; Singla Resort · Sri Ganganagar, Rajasthan &nbsp; ✦
             </p>
 
             <Countdown />
@@ -551,15 +554,27 @@ const weddingMap =
             <div className="gallery-grid">
 
               <div className="gallery-card gallery-large reveal">
-                <PhotoPlaceholder label="Our Story" />
+                <img
+  src="/images/pic1.png"
+  alt="Our Story"
+  className="gallery-photo"
+/>
               </div>
 
               <div className="gallery-card reveal">
-                <PhotoPlaceholder label="Moments" />
+                <img
+  src="/images/pic2.png"
+  alt="Moments"
+  className="gallery-photo"
+/>
               </div>
 
               <div className="gallery-card reveal">
-                <PhotoPlaceholder label="Forever" />
+                <img
+  src="/images/pic3.png"
+  alt="Forever"
+  className="gallery-photo"
+/>
               </div>
 
             </div>
@@ -745,9 +760,18 @@ const weddingMap =
             <Ornament />
 
             <p className="reception-date">
-              SATURDAY . 19 DECEMBER 2026
-            </p>
-            <p className="reception-time">
+  SATURDAY · 19 DECEMBER 2026
+</p>
+
+<p
+  className="reception-time"
+  style={{
+    color: "#8b6f66",
+    fontSize: "18px",
+    fontWeight: "500",
+    margin: "10px 0 35px",
+  }}
+>
   7:30 PM onwards
 </p>
 

@@ -957,9 +957,9 @@ a {
 .couple-photo {
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
-  object-position: center;
+  object-position: center center;
+  display: block;
 }
 
 .person-role {
@@ -2699,6 +2699,13 @@ footer span {
   object-fit: cover;
   object-position: center;
 }
+.photo-frame img[alt="Bride"] {
+  object-position: center center;
+}
+
+.photo-frame img[alt="Groom"] {
+  object-position: center center;
+}
 
 /* Centre heart */
 .heart-center {
@@ -2765,8 +2772,23 @@ footer span {
   }
 
   .photo-frame {
-    max-width: 280px;
-  }
+  width: 280px;
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  border: 3px solid #c69a3a;
+  padding: 6px;
+  box-sizing: border-box;
+  background: #fffaf0;
+}
+
+.couple-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
   .person h3 {
     font-size: 2.2rem;
@@ -3671,4 +3693,41 @@ body {
     top: 12px;
     right: 12px;
   }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.gallery-card,
+.gallery-card.gallery-large {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.gallery-card:nth-child(2) .gallery-photo {
+  object-position: 35% center;
+}
+
+.gallery-card {
+  border: 3px solid #c69a3a;
+  padding: 6px;
+  background: #fffaf0;
+  box-sizing: border-box;
+}
+
+.gallery-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
